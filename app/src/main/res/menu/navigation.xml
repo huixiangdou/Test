@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.test.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_share"
+        android:title="always"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="always" />
+    <item
+        app:showAsAction="ifRoom"
+        android:title="ifRoom"
+        android:id="@+id/item_dashboard" />
+    <item
+        android:id="@+id/item_home"
+        app:showAsAction="never"
+        android:title="never"
+        />
+    <item
+        app:showAsAction="collapseActionView"
+        android:title="collapseActionView"
+        />
+    <item
+        app:showAsAction="withText"
+        android:title="withText"/>
+</menu>
